@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>GitHub Profile Finder</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-top">
+        <h1>GitHub Profile Finder</h1>
+        <button id="darkModeToggle" class="theme-toggle" title="Toggle dark/light mode">🌙</button>
+      </div>
+      <form id="searchForm" class="search-form">
+        <input id="username" type="text" placeholder="Enter GitHub username" autocomplete="off" required>
+        <button type="submit">Search</button>
+      </form>
+      <!-- <div class="features-nav">
+        <button class="feature-btn" id="darkModeBtn" data-feature="darkmode">🌙 Dark Mode</button>
+        <button class="feature-btn" id="repoCardsBtn" data-feature="repocards">📦 Repo Cards</button>
+        <button class="feature-btn" id="contribGraphBtn" data-feature="controlgraph">📊 Contribution</button>
+        <button class="feature-btn" id="searchHistoryBtn" data-feature="searchhistory">⏰ History</button>
+        <button class="feature-btn" id="langChartBtn" data-feature="langchart">📈 Languages</button>
+        <button class="feature-btn" id="compareUsersBtn" data-feature="compare">🔄 Compare</button>
+        <button class="feature-btn" id="pdfExportBtn" data-feature="pdfexport">📄 Export PDF</button>
+      </div> -->
+    </header>
+
+    <main>
+      <div id="loader" class="loader hidden" aria-hidden="true"></div>
+
+      <div id="error" class="error hidden" role="alert"></div>
+
+      <section id="profile" class="card hidden" aria-live="polite">
+        <div class="card-inner">
+          <div class="card-front">
+            <img id="avatar" alt="user avatar" src="" class="avatar">
+            <h2 id="name"></h2>
+            <p id="bio" class="bio"></p>
+            <ul class="stats">
+              <li><strong id="followers">0</strong><span>Followers</span></li>
+              <li><strong id="following">0</strong><span>Following</span></li>
+              <li><strong id="repos">0</strong><span>Repos</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="reposSection" class="repos-section hidden">
+        <h3>All Repositories</h3>
+        <div id="repoCards" class="repo-cards-grid"></div>
+      </section>
+    </main>
+
+    <!-- <footer class="footer">
+      <small>Built with GitHub API, jQuery &amp; AJAX</small>
+    </footer> -->
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
