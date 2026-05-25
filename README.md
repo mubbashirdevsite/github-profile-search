@@ -1,15 +1,104 @@
-# GitHub Profile Finder
+# 🔍 GitHub Profile Search
 
-Simple client-side app to search GitHub users and display profile info using jQuery + AJAX.
+A responsive and modern GitHub Profile Search web app built using HTML, CSS, JavaScript, jQuery, and AJAX.
+Search GitHub users instantly, view profile information, repositories, followers, and explore developer stats with a clean dark/light UI.
 
-## Files
-- [index.html](index.html) — main page
-- [css/styles.css](css/styles.css) — styles and animations
-- [js/script.js](js/script.js) — AJAX logic and rendering
+---
 
-## Usage
-Open `index.html` in a browser and enter a GitHub username, `@username`, or paste a full GitHub profile URL (for example `https://github.com/username`). The app will fetch profile info and top repositories.
+## 🚀 Features
 
-Notes:
-- This is a static frontend app using the public GitHub API (rate-limited when unauthenticated).
-- For heavier use, provide an OAuth token or proxy server.
+* 🔎 Search GitHub profiles instantly
+* 🌐 Live GitHub API integration
+* 👤 View user profile details
+* 📦 Display public repositories
+* 👥 Followers & following statistics
+* 🌙 Dark / Light mode toggle
+* ⚡ AJAX requests with jQuery
+* 📱 Fully responsive design
+* 🎨 Modern glassmorphism UI
+* ⭐ Repository stars & forks
+* 🚨 Error handling & loading animations
+
+---
+
+## 🛠️ Technologies Used
+
+* HTML5
+* CSS3
+* JavaScript (ES6)
+* jQuery
+* AJAX
+* GitHub REST API
+
+---
+
+## 📂 Folder Structure
+
+```bash
+github-profile-search/
+│── css/
+│   └── styles.css
+│
+│── js/
+│   └── script.js
+│
+│── index.html
+│── README.md
+```
+
+---
+
+## 🌐 API Used
+
+```txt
+https://api.github.com/users/
+```
+
+---
+
+## 📱 Responsive Layout
+
+Optimized for:
+
+* Desktop
+* Tablet
+* Mobile devices
+
+---
+
+## 💡 Upcoming Features
+
+* 📊 Contribution graph
+* 📈 Language analytics
+* 🔄 Compare GitHub users
+* 📄 Export profile as PDF
+* ❤️ Save favorite profiles
+* ⏰ Search history
+
+---
+
+## 🧠 Learning Purpose
+
+This project helps improve skills in:
+
+* API integration
+* AJAX requests
+* DOM manipulation
+* Responsive web design
+* GitHub API usage
+* Frontend development
+
+---
+
+## 📜 License
+
+This project is open source and free to use.
+
+---
+
+## 👨‍💻 Author
+
+M Mubbashir Idrees
+Frontend & WordPress Developer
+
+GitHub: https://github.com/mubbashirdevsite
